@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        // Функция для вывода сообщения
+        function logger(key) {
+        alert(`Вы нажали ${key} !!!`);
+        }
+
+        // Обработчик события нажатия клавиши
+        document.addEventListener('keydown', function(event) {
+        const key = event.key;  // Получаем символ нажатой клавиши
+        logger(key);  // Выводим сообщение с нажатым символом
+        });
+
+    </script>
+</body>
+</html>
+
