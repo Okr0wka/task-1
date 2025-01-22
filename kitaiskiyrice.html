@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        function findMinimumWeighings(targetWeight) {
+            let weight = 1; // Начинаем с 1 грамма
+            let weighings = 0; // Счётчик взвешиваний
+              
+            while (weight < targetWeight) {
+                weight *= 2; // Удваиваем вес
+                weighings++;
+            }
+              
+            return weighings;
+        }
+          
+        // Рассчитываем минимальное количество взвешиваний для 1 кг (1000 г)
+        const targetWeight = 1000; // Целевой вес в граммах
+        const result = findMinimumWeighings(targetWeight);
+        console.log(Минимальное количество взвешиваний: ${result});
+    </script>
+</body>
+</html>
