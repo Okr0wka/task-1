@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        function circleArea(radius) {
+            // Проверяем, что радиус является положительным числом
+            if (radius <= 0 || typeof radius !== 'number') {
+                return "Введите корректный радиус (положительное число)";
+            }
+        
+            // Вычисляем площадь круга
+            const area = Math.PI * Math.pow(radius, 2);
+            return area;
+        }
+        
+        // Пример использования
+        console.log(circleArea(5)); // Вывод: 78.53981633974483
+        console.log(circleArea(-3)); // Вывод: Введите корректный радиус (положительное число)
+        console.log(circleArea("hello")); // Вывод: Введите корректный радиус (положительное число)
+    </script>
+</body>
+</html>
