@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        function filterArray(array, filterFunction) {
+          const result = [];
+          for (let element of array) {
+            if (filterFunction(element)) {
+              result.push(element);
+            }
+          }
+          return result;
+        }
+        
+        // Пример использования:
+        const numbers = [1, 2, 3, 4, 5];
+        const isOdd = (num) => num % 2 !== 0; // Фильтрующая функция для нечетных чисел
+        console.log(filterArray(numbers, isOdd)); // Ожидаемый результат: [1, 3, 5]
+    </script>
+</body>
+</html>
